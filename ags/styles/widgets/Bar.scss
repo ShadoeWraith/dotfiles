@@ -1,0 +1,227 @@
+@use "../theme.scss" as *;
+
+window#Bar {
+  border: none;
+  box-shadow: none;
+  color: #f49448;
+  background-color: $bg1;
+  font-family: $font1;
+  font-size: 14px;
+  font-weight: 700;
+  min-height: 28px;
+  margin: 5px 20px 0px 20px;
+  border-radius: 5px;
+  border: solid 2px #f49448;
+
+  .Workspaces {
+    margin-left: 5px;
+    transition-duration: 150ms;
+    button {
+      all: unset;
+      color: #727169;
+      background-color: transparent;
+      padding: 0 4px;
+      &:hover {
+        color: $fg2;
+        transition-duration: 100ms;
+      }
+    }
+    .focused label {
+      color: #f49448;
+    }
+  }
+
+  //   .Workspaces {
+  //     margin-left: 15px;
+  //     transition-duration: 150ms;
+  //   button {
+  //     all: unset;
+  //     margin: 15px 15px 15px 0;
+  //     padding: .1rem;
+  //     border-radius: 50%;
+  //     background-color: #727169;
+  //     border: 2px solid #727169;
+  //     &:hover {
+  //       color: $fg2;
+  //     }
+  //   }
+  //   .focused {
+  //     background-color: #f49448;
+  //     border: 2px solid #f49448;
+  //   }
+  // }
+
+  .Tray {
+    padding: 0 4px;
+    button {
+      background-color: transparent;
+      padding: 0 4px;
+      &:hover {
+        background-color: rgba($fg1, 0.1);
+      }
+    }
+  }
+
+  .TimeAndWeather {
+    all: unset;
+    background-color: transparent;
+    border-radius: 6px;
+    transition-duration: 200ms;
+    margin: 4px 0px;
+    &:hover {
+      color: $bg1;
+      background-color: rgba(#9cabca, 0.7);
+    }
+  }
+}
+
+.DateTime button {
+  padding: 1px 10px;
+  margin: 5px 0;
+  outline: #f49448;
+}
+
+.SystemTrayToggle {
+  button {
+    padding: 1px 3px;
+    margin: 5px 0;
+  }
+
+  .TrayItem button {
+    padding: 0 8px;
+    margin: 0;
+    background-color: transparent;
+    outline: #f49448;
+  }
+}
+
+.power {
+  button {
+    padding: 1px 8px;
+    margin: 5px 0;
+    outline: #f49448;
+    font-weight: bold;
+  }
+
+  popover {
+    margin-right: 16px;
+  }
+
+  .power-option {
+    border-radius: 5px;
+    color: #727169;
+    padding: 0 10px;
+    button {
+      background-color: transparent;
+    }
+  }
+
+  .power-option:hover {
+    background-color: #f4944830;
+    color: #f49448;
+  }
+}
+
+.media {
+  padding: 0;
+  background-color: transparent;
+
+  .playing {
+    color: #f49448;
+  }
+  .paused {
+    color: #727169;
+    transition-duration: 100ms;
+
+    &:hover {
+      color: $fg2;
+    }
+  }
+}
+
+tooltip {
+  background-color: $bg1;
+  margin-top: 12px;
+  border: 2px solid #f49448;
+  border-radius: 5px;
+  color: #727169;
+}
+
+.network {
+  padding: 1px 8px;
+  margin: 5px 0;
+  outline: #f49448;
+  font-weight: bold;
+
+  popover {
+    margin-right: 16px;
+  }
+
+  .power-option:hover {
+    background-color: #f4944830;
+    color: #f49448;
+  }
+}
+
+/* Target the popovers created by the GtkMenuButton for the system tray */
+.menu {
+  contents {
+    background-color: $bg1;
+    border: 2px solid #f49448;
+    border-radius: 5px;
+    color: #727169;
+    font-weight: bold;
+    box box box box :hover {
+      color: #f49448;
+    }
+  }
+  arrow {
+    background-color: transparent;
+  }
+}
+
+popover {
+  contents {
+    background-color: $bg1;
+    border: 2px solid #f49448;
+    border-radius: 5px;
+
+    calendar {
+      header {
+        color: #f49448;
+        font-weight: bold;
+      }
+      grid {
+        color: #727169;
+        font-weight: bold;
+        :hover {
+          background-color: #f4944880;
+          border-radius: 5px;
+          color: #f49448;
+          font-weight: bold;
+        }
+        :selected {
+          background-color: #f4944880;
+          color: #f49448;
+          border-radius: 5px;
+          outline: #f49448;
+        }
+        :focus {
+          outline: #f49448;
+        }
+        .today {
+          background-color: #f49448;
+          color: white;
+          border-radius: 5px;
+        }
+
+        .day {
+          background-color: red;
+        }
+      }
+    }
+  }
+  arrow {
+    background-color: transparent;
+  }
+}

@@ -1,0 +1,36 @@
+VSCodium
+unity3d
+systemd
+yay
+xsettingsd
+mozilla
+libreoffice
+fish
+Electron
+dconf
+discord
+chromium
+Code - OSS
+cachyos
+copyq
+gpick
+impala
+micro
+nwg-look
+waypaper
+cachyos-hello.json
+kiorc
+mimeapps.list
+QtProject.conf
+spectaclerc
+trashrc
+user-dirs.dirs
+user-dirs.locale
+pinta
+btop
+gtk-3.0
+gtk-4.0
+spotify
+
+# tbh no idea why this went to my ~/.config folder
+Melvor Idle 
