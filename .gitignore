@@ -16,7 +16,6 @@ copyq
 gpick
 impala
 micro
-nwg-look
 waypaper
 cachyos-hello.json
 kiorc
@@ -31,6 +30,7 @@ btop
 gtk-3.0
 gtk-4.0
 spotify
+go
 
 # tbh no idea why this went to my ~/.config folder
 Melvor Idle 
