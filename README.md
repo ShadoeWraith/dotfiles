@@ -5,7 +5,8 @@
 - Uses Astal + Gnim with Gtk components
 
 ![AGS Bar](./assets/ags-bar.png)
-![AGS Bar with Notifications](./assets/ags-bar-notifcations.png)
+![AGS Bar with Notifications](./assets/ags-bar-notifications.png)
 
 - Custom VS Code Theme
-  ![VSCode Theme](./assets/vscode-theme.png)
+
+![VSCode Theme](./assets/vscode-theme.png)
